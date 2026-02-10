@@ -80,7 +80,9 @@ git clone https://github.com/username/Customer_churn_system.git
 cd Customer_churn_system
 ``` 
 ### 2️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 
 requirements.txt should include:
@@ -91,21 +93,24 @@ scikit-learn
 streamlit
 matplotlib
 joblib
-3️⃣ Train the Model (Optional if pre-trained models exist)
+
+
+### 3️⃣ Train the Model (Optional if pre-trained models exist)
 python model/train.py
 
 
-Loads data/churn.csv
+>Loads data/churn.csv
 
-Cleans and encodes categorical features
+>Cleans and encodes categorical features
 
-Trains a Random Forest model
+>Trains a Random Forest model
 
-Saves churn_model.pkl, features.pkl, and label_encoders.pkl in model/
+>Saves churn_model.pkl, features.pkl, and label_encoders.pkl in model/
 
 4️⃣ Run the Dashboard
+```bash
 streamlit run model/app.py
-
+```
 
 The browser will open: interactive dashboard
 
